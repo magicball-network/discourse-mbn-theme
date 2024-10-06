@@ -1,0 +1,21 @@
+{
+  "name": "MBN",
+  "about_url": "https://github.com/magicball-network/discourse-mbn-theme",
+  "license_url": "https://github.com/magicball-network/discourse-mbn-theme/blob/main/LICENSE",
+  "color_schemes": {
+    "MBN Dark": {
+      "primary": "f8f9fa",
+      "secondary": "212529",
+      "tertiary": "099dd7",
+      "quaternary": "c14924",
+      "header_background": "343a40",
+      "header_primary": "dddddd",
+      "highlight": "a87137",
+      "danger": "e45735",
+      "success": "1ca551",
+      "love": "fa6c8d",
+      "selected": "1b3f57",
+      "hover": "1b3f57"
+    }
+  }
+}
