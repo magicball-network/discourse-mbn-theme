@@ -1,21 +1,33 @@
 {
   "name": "MBN",
-  "about_url": "https://github.com/magicball-network/discourse-mbn-theme",
+  "component": false,
   "license_url": "https://github.com/magicball-network/discourse-mbn-theme/blob/main/LICENSE",
+  "about_url": "https://github.com/magicball-network/discourse-mbn-theme",
+  "authors": "elmuerte",
+  "theme_version": "1.0",
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+	"img-website": "assets/icon-website.png",
+  	"img-plasma": "assets/plasma.webp",
+	"img-profile-bg": "assets/profile-background.jpg"
+  },
   "color_schemes": {
     "MBN Dark": {
-      "primary": "f8f9fa",
+      "primary": "dee2e6",
       "secondary": "212529",
-      "tertiary": "099dd7",
+      "tertiary": "67a7cb",
       "quaternary": "c14924",
       "header_background": "343a40",
       "header_primary": "dddddd",
       "highlight": "a87137",
+      "selected": "1b3f57",
+      "hover": "1b3f57",
       "danger": "e45735",
       "success": "1ca551",
-      "love": "fa6c8d",
-      "selected": "1b3f57",
-      "hover": "1b3f57"
+      "love": "fa6c8d"
     }
+  },
+  "modifiers": {
   }
 }

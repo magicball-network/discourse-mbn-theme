@@ -1,0 +1,80 @@
+@import "common/foundation/variables";
+
+a:hover {
+	color: var(--link-hover);
+}
+
+.d-header {
+	background-image: var(--header-gradient);
+}
+
+/* header links */
+.custom-header-links .headerLink a {
+	font-size: var(--font-0);
+	opacity: .75;
+}
+
+.custom-header-links .headerLink a:hover {
+	color: var(--header_primary);
+	opacity: 1;
+}
+
+.custom-header-links .website-custom-header-links a {
+	padding-left: 32px;
+	background: no-repeat left center/24px url($img-website);
+}
+
+/* zebra striping in topic list */
+.topic-list-item:nth-child(even) {
+	background-color: var(--secondary-alt);
+}
+
+.topic-list-item:nth-child(odd) {
+}
+
+/* zebra striping in posts */
+.topic-post:nth-child(even) .topic-body {
+	background-color: var(--secondary-alt);
+}
+
+.topic-post:nth-child(odd) {
+}
+
+/* post stying tuning */
+.topic-body {
+	padding-left: 0.25em;
+}
+
+.topic-body .topic-meta-data {
+	background-color: var(--tertiary-low);
+	padding-top: .25em;
+	border-radius: 0.375rem;
+}
+
+.read-state {
+	color: var(--tertiary-high);
+}
+
+.topic-avatar {
+	padding-top: 13px;
+}
+
+/* plasma highlighting */
+.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover {
+	background-image: url($img-plasma);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	--primary-medium: var(--primary-high);
+	
+	a, a:visited, .badge-category {
+		color: #fff;
+	}
+}
+
+/* default user card image */
+.user-card {
+	background-image: url($img-profile-bg);
+}
+
