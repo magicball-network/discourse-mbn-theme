@@ -9,6 +9,7 @@
   "maximum_discourse_version": null,
   "assets": {
 	"img-website": "assets/icon-website.png",
+	"img-quotes": "assets/icon-quotes.png",
   	"img-plasma": "assets/plasma.webp",
 	"img-profile-bg": "assets/profile-background.jpg"
   },

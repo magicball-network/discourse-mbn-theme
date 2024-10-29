@@ -9,9 +9,28 @@ a:hover {
 }
 
 /* header links */
+@media (max-width: 550px) {
+	.custom-header-links {
+		display: none;
+	}
+}
+
+@media (max-width: 650px) {
+	.custom-header-links .headerLink:nth-child(n + 2) {
+		display: none;
+	}
+}
+
+@media (max-width: 750px) {
+	.custom-header-links .headerLink:nth-child(n + 3) {
+		display: none;
+	}
+}
+
 .custom-header-links .headerLink a {
 	font-size: var(--font-0);
 	opacity: .75;
+	white-space: nowrap;
 }
 
 .custom-header-links .headerLink a:hover {
@@ -22,6 +41,11 @@ a:hover {
 .custom-header-links .website-custom-header-links a {
 	padding-left: 32px;
 	background: no-repeat left center/24px url($img-website);
+}
+
+.custom-header-links .quotes-custom-header-links a {
+	padding-left: 32px;
+	background: no-repeat left center/24px url($img-quotes);
 }
 
 /* zebra striping in topic list */
