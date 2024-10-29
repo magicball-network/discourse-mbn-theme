@@ -84,7 +84,9 @@ a:hover {
 }
 
 /* plasma highlighting */
-.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover {
+.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover, 
+		.sidebar-sections .sidebar-section-link-wrapper:hover,
+		.sidebar-sections .sidebar-section-link:hover  {
 	background-image: url($img-plasma);
 	background-position: 50%;
 	background-repeat: no-repeat;
