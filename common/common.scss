@@ -75,12 +75,16 @@ a:hover {
 	border-radius: 0.375rem;
 }
 
-.read-state {
-	color: var(--tertiary-high);
+.mobile-view .topic-body .topic-meta-data {
+	padding: .25em .25em .15em .25em;
+	
+	.names {
+		line-height: inherit;
+	}
 }
 
-.topic-avatar {
-	padding-top: 13px;
+.read-state {
+	color: var(--tertiary-high);
 }
 
 /* plasma highlighting */
