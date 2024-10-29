@@ -4,7 +4,7 @@
   "license_url": "https://github.com/magicball-network/discourse-mbn-theme/blob/main/LICENSE",
   "about_url": "https://github.com/magicball-network/discourse-mbn-theme",
   "authors": "elmuerte",
-  "theme_version": "1.0",
+  "theme_version": "1.0.1",
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
