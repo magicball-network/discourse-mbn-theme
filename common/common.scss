@@ -56,9 +56,16 @@ a:hover {
 /* zebra striping in topic list */
 .topic-list-item:nth-child(even) {
 	background-color: var(--secondary-alt);
+	
+	&:hover {
+		background: rgba(var(--primary-rgb), 0.025);
+	}
 }
 
 .topic-list-item:nth-child(odd) {
+	&:hover {
+		background: rgba(var(--primary-rgb), 0.025);
+	}
 }
 
 /* zebra striping in posts */
