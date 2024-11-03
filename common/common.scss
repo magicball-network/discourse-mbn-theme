@@ -1,7 +1,7 @@
 @import "common/foundation/variables";
 
 /* don't show userfields on signup */
-.login-form .user-fields {
+#login-form .user-fields {
 	display: none;
 }
 
