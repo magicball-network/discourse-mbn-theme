@@ -1,5 +1,10 @@
 @import "common/foundation/variables";
 
+/* don't show userfields on signup */
+.login-form .user-fields {
+	display: none;
+}
+
 a:hover {
 	color: var(--link-hover);
 }
