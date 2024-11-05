@@ -123,3 +123,8 @@ a:hover {
 	background-image: url($img-profile-bg);
 }
 
+/* fix for wordpress emoji image embedding */
+img.wp-smiley {
+	height: 1em;
+	width: 1em;
+}
