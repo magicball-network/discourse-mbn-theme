@@ -125,6 +125,6 @@ a:hover {
 
 /* fix for wordpress emoji image embedding */
 img.wp-smiley {
-	height: 1em;
-	width: 1em;
+	height: auto;
+	width: auto;
 }
