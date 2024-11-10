@@ -55,8 +55,8 @@ a:hover {
 
 /* zebra striping in topic list */
 .topic-list-item:nth-child(even) {
-	background-color: var(--secondary-alt);
-	
+	background-color: var(--zebra-tint);
+
 	&:hover {
 		background: rgba(var(--primary-rgb), 0.025);
 	}
@@ -70,13 +70,13 @@ a:hover {
 
 /* zebra striping in posts */
 .topic-post:nth-child(even) .topic-body {
-	background-color: var(--secondary-alt);
+	background-color: var(--zebra-tint);
 }
 
-.topic-post:nth-child(odd) {
+.topic-post:nth-child(odd) .topic-body {
 }
 
-/* post stying tuning */
+/* post styling tuning */
 .topic-body {
 	padding-left: 0.25em;
 }
@@ -97,6 +97,14 @@ a:hover {
 
 .read-state {
 	color: var(--tertiary-high);
+}
+
+.post-actions {
+	padding-right: .5em;
+}
+
+.post-action {
+	color: var(--quaternary);
 }
 
 /* plasma highlighting */

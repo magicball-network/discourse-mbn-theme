@@ -1,12 +1,16 @@
-$secondary-alt: dark-light-diff($secondary, $primary, 1%, -1%) !default;
+$zebra-tint: dark-light-choose(rgba(0,0,0,0.01), rgba(255,255,255,0.01));
 
 :root {
-	--secondary-alt: #{$secondary-alt};
+	--zebra-tint: #{$zebra-tint};
 	--link-hover: #{dark-light-diff($tertiary, $tertiary, 20%, 20%)};
 
 	--header-gradient: #{dark-light-choose(
 		linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)),
 		linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
 	)};
+
+	/* special variables for background image in desktop mode */
+	--bgblend-body-color: #{dark-light-choose(color(from var(--secondary) xyz x y z / 0.95), var(--secondary))};
+	--bgblend-timeline-color: #{dark-light-choose(var(--tertiary-medium), var(--tertiary-low-or-tertiary-high))};
 }
 
