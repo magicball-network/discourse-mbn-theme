@@ -136,3 +136,25 @@ img.wp-smiley {
 	height: auto;
 	width: auto;
 }
+
+/* welcome banner */
+
+.above-main-container-outlet.welcome-link-banner-connectors .welcome-link-banner-wrapper,
+.below-site-header-outlet.welcome-link-banner-connector .welcome-link-banner-wrapper {
+	background-position: right center;
+	margin-bottom: 0;
+
+	.welcome-wrapper {
+		width: 66%;
+
+		.welcome-content {
+			max-width: none;
+			flex: 1 0 66%;
+		}
+
+		.featured-banner-link {
+			flex: 1 1 33%;
+		}
+	}
+}
+
