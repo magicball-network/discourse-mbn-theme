@@ -4,14 +4,18 @@
   "license_url": "https://github.com/magicball-network/discourse-mbn-theme/blob/main/LICENSE",
   "about_url": "https://github.com/magicball-network/discourse-mbn-theme",
   "authors": "elmuerte",
-  "theme_version": "1.0.2",
+  "theme_version": "1.1.0",
   "minimum_discourse_version": "3.3.0",
   "maximum_discourse_version": null,
   "assets": {
 	"img-website": "assets/icon-website.png",
 	"img-quotes": "assets/icon-quotes.png",
   	"img-plasma": "assets/plasma.webp",
-	"img-profile-bg": "assets/profile-background.jpg"
+	"img-profile-bg": "assets/profile-background.jpg",
+	"img-bg-waves": "assets/bg-waves.png",
+	"img-bg-ferry": "assets/bg-ferry.jpg",
+	"img-bg-fortress": "assets/bg-fortress.jpg",
+	"img-bg-night": "assets/bg-night.png"
   },
   "color_schemes": {
     "MBN Dark": {

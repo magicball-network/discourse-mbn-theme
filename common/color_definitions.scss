@@ -10,7 +10,12 @@ $zebra-tint: dark-light-choose(rgba(0,0,0,0.01), rgba(255,255,255,0.01));
 	)};
 
 	/* special variables for background image in desktop mode */
-	--bgblend-body-color: #{dark-light-choose(color(from var(--secondary) xyz x y z / 0.95), var(--secondary))};
+	--bgblend-wallpaper-alpha: 1;
+	--bgblend-wallpaper-color: #{dark-light-choose(
+		color(from var(--secondary) xyz x y z / calc(0.9 * var(--bgblend-wallpaper-alpha))),
+		color(from var(--secondary) xyz x y z / var(--bgblend-wallpaper-alpha))
+	)};
+	--bgblend-content-alpha: 0.85;
 	--bgblend-timeline-color: #{dark-light-choose(var(--tertiary-medium), var(--tertiary-low-or-tertiary-high))};
 }
 

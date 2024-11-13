@@ -1,0 +1,10 @@
+wallpaper_user_field:
+  default: -1
+  type: integer
+wallpaper_alpha_user_field:
+  default: -1
+  type: integer
+wallpaper_content_alpha_user_field:
+  default: -1
+  type: integer
+

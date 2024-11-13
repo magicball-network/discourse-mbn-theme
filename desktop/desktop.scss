@@ -1,0 +1,84 @@
+@import "common/foundation/variables";
+
+/* background image */
+
+:root {
+	--wallpaper-waves: url(#{$img-bg-waves});
+	--wallpaper-ferry: url(#{$img-bg-ferry});
+	--wallpaper-fortress: url(#{$img-bg-fortress});
+	--wallpaper-night: url(#{$img-bg-night});
+	--wallpaper: none;
+}
+
+body {
+	background-image: var(--wallpaper), linear-gradient(var(--bgblend-wallpaper-color), var(--bgblend-wallpaper-color));
+	background-blend-mode: overlay;
+}
+
+.topic-list, 
+.category-list,
+#topic,
+.topic-map.--bottom,
+.sidebar-wrapper {
+	background-color: color(from var(--secondary) xyz x y z / var(--bgblend-content-alpha));
+}
+
+#main-outlet > section,
+section.user-main,
+.container.cakeday,
+.boxed.white {
+	background-color: color(from var(--secondary) xyz x y z / var(--bgblend-content-alpha));
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.container.cakeday {
+	padding-top: 0;
+}
+
+.category-list.with-topics {
+	margin-left: 0;
+}
+
+.category-title-header {
+	margin-bottom: 10px;
+}
+
+.container.posts {
+	grid-template-areas: "posts padding timeline";
+	grid-template-columns: fit-content(100%) auto auto;
+}
+
+.topic-area > .loading-container {
+	width: calc(var(--topic-body-width) + var(--topic-avatar-width) + var(--topic-body-width-padding)*2 + .25em);
+}
+
+.loading-container .topic-timer-info {
+	max-width: 100%;
+}
+
+.small-action .small-action-desc {
+	width: calc(var(--topic-body-width) + var(--topic-body-width-padding)*2 + .25em);
+}
+
+.topic-map,.topic-map.--bottom {
+	padding-right: .5em;
+	max-width: revert;
+}
+
+.user-main {
+	.about .details,
+	.about.collapsed-info .details,
+	.user-content {
+		background: none;
+	}	
+}
+
+.timeline-container .topic-timeline .timeline-handle {
+	background-color: var(--bgblend-timeline-color);
+}
+
+.timeline-container .topic-timeline .timeline-scrollarea {
+	border-color: var(--bgblend-timeline-color);
+}
+
