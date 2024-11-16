@@ -12,10 +12,16 @@
 	"img-quotes": "assets/icon-quotes.png",
   	"img-plasma": "assets/plasma.webp",
 	"img-profile-bg": "assets/profile-background.jpg",
-	"img-bg-waves": "assets/bg-waves.png",
-	"img-bg-ferry": "assets/bg-ferry.jpg",
-	"img-bg-fortress": "assets/bg-fortress.jpg",
-	"img-bg-night": "assets/bg-night.png"
+	"img-bg-waves": "assets/bg-waves.webp",
+	"img-bg-citadel-island": "assets/bg-citadel-island.webp",
+	"img-bg-couple": "assets/bg-couple.webp",
+	"img-bg-ferry": "assets/bg-ferry.webp",
+	"img-bg-fortress": "assets/bg-fortress.webp",
+	"img-bg-lava": "assets/bg-lava.webp",
+	"img-bg-ocean": "assets/bg-ocean.webp",
+	"img-bg-planets": "assets/bg-planets.webp",
+	"img-bg-the-view": "assets/bg-the-view.webp",
+	"img-bg-twinsun": "assets/bg-twinsun.webp"
   },
   "color_schemes": {
     "MBN Dark": {

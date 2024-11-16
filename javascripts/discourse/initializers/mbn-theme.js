@@ -101,17 +101,14 @@ class MbnThemeWallpaper {
 	}
 
 	alterWallpaper(wallpaper) {
-		if (!wallpaper) {
-			wallpaper = '';
+		if (!wallpaper || wallpaper === '') {
+			wallpaper = 'waves';
 		}
-		switch (wallpaper.toLowerCase()) {
-			case 'none': this.styleRoot.setProperty('--wallpaper', 'none'); break;
-			case 'ferry': this.styleRoot.setProperty('--wallpaper', 'var(--wallpaper-ferry)'); break;
-			case 'fortress': this.styleRoot.setProperty('--wallpaper', 'var(--wallpaper-fortress)'); break;
-			case 'night': this.styleRoot.setProperty('--wallpaper', 'var(--wallpaper-night)'); break;
-			case 'waves': 
-			default: 
-				this.styleRoot.setProperty('--wallpaper', 'var(--wallpaper-waves)'); break;
+		wallpaper = wallpaper.toLowerCase().replaceAll(/[^a-z0-9]+/g, '-');
+		if (wallpaper === 'none') {
+			this.styleRoot.setProperty('--wallpaper', 'none');
+		} else {
+			this.styleRoot.setProperty('--wallpaper', 'var(--wallpaper-'+wallpaper+')');
 		}
 	}
 

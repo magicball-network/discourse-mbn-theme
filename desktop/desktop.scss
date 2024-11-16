@@ -4,9 +4,16 @@
 
 :root {
 	--wallpaper-waves: url(#{$img-bg-waves});
+	--wallpaper-citadel-island: url(#{$img-bg-citadel-island});
+	--wallpaper-couple: url(#{$img-bg-couple});
 	--wallpaper-ferry: url(#{$img-bg-ferry});
 	--wallpaper-fortress: url(#{$img-bg-fortress});
-	--wallpaper-night: url(#{$img-bg-night});
+	--wallpaper-lava: url(#{$img-bg-lava});
+	--wallpaper-ocean: url(#{$img-bg-ocean});
+	--wallpaper-planets: url(#{$img-bg-planets});
+	--wallpaper-the-view: url(#{$img-bg-the-view});
+	--wallpaper-twinsun: url(#{$img-bg-twinsun});
+	/* default to none to reduce image possible initial switching */
 	--wallpaper: none;
 }
 
