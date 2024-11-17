@@ -15,6 +15,7 @@
 	--wallpaper-twinsun: url(#{$img-bg-twinsun});
 	/* default to none to reduce image possible initial switching */
 	--wallpaper: none;
+	--sidebar-border-width: 1px;
 }
 
 body {
@@ -87,5 +88,9 @@ section.user-main,
 
 .timeline-container .topic-timeline .timeline-scrollarea {
 	border-color: var(--bgblend-timeline-color);
+}
+
+.sidebar-wrapper .sidebar-container {
+	border-right-width: var(--sidebar-border-width);
 }
 

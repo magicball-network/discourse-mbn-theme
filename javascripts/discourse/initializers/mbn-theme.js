@@ -107,8 +107,10 @@ class MbnThemeWallpaper {
 		wallpaper = wallpaper.toLowerCase().replaceAll(/[^a-z0-9]+/g, '-');
 		if (wallpaper === 'none') {
 			this.styleRoot.setProperty('--wallpaper', 'none');
+			this.styleRoot.setProperty('--sidebar-border-width', '1px');
 		} else {
 			this.styleRoot.setProperty('--wallpaper', 'var(--wallpaper-'+wallpaper+')');
+			this.styleRoot.setProperty('--sidebar-border-width', '0');
 		}
 	}
 
