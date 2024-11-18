@@ -15,7 +15,7 @@ $zebra-tint: dark-light-choose(rgba(0,0,0,0.01), rgba(255,255,255,0.01));
 		color(from var(--secondary) xyz x y z / calc(0.9 * var(--bgblend-wallpaper-alpha))),
 		color(from var(--secondary) xyz x y z / var(--bgblend-wallpaper-alpha))
 	)};
-	--bgblend-content-alpha: 0.85;
+	--bgblend-content-alpha: 0.9;
 	--bgblend-timeline-color: #{dark-light-choose(var(--tertiary-medium), var(--tertiary-low-or-tertiary-high))};
 }
 
