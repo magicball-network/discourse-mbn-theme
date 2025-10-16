@@ -1,0 +1,24 @@
+.category-list,
+.topic-list,
+#topic,
+.groups-boxes .group-box,
+.directory-table {
+  background-color: color(
+    from var(--secondary) xyz x y z / var(--bgblend-content-alpha)
+  );
+}
+
+.about-page #main-outlet > section,
+.static-faq #main-outlet > section,
+.static-tos #main-outlet > section,
+.static-privacy #main-outlet > section,
+.container.cakeday {
+  background-color: color(
+    from var(--secondary) xyz x y z / var(--bgblend-content-alpha)
+  );
+  padding: 5px;
+}
+
+.powered-by-discourse {
+  margin-top: 1em;
+}

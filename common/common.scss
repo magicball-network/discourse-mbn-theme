@@ -1,5 +1,28 @@
 @import "common/foundation/variables";
 
+/* background image */
+
+:root {
+	--wallpaper-waves: url(#{$img-bg-waves});
+	--wallpaper-citadel-island: url(#{$img-bg-citadel-island});
+	--wallpaper-couple: url(#{$img-bg-couple});
+	--wallpaper-ferry: url(#{$img-bg-ferry});
+	--wallpaper-fortress: url(#{$img-bg-fortress});
+	--wallpaper-hero: url(#{$img-bg-hero});
+	--wallpaper-lava: url(#{$img-bg-lava});
+	--wallpaper-ocean: url(#{$img-bg-ocean});
+	--wallpaper-planets: url(#{$img-bg-planets});
+	--wallpaper-romantic-view: url(#{$img-bg-romantic-view});
+	--wallpaper-twinsun: url(#{$img-bg-twinsun});
+	/* default to none to reduce image possible initial switching */
+	--wallpaper: none;
+}
+
+body {
+	background-image: var(--wallpaper), linear-gradient(var(--bgblend-wallpaper-color), var(--bgblend-wallpaper-color));
+	background-blend-mode: overlay;
+}
+
 /* don't show userfields on signup */
 #login-form .user-fields {
 	display: none;
@@ -158,3 +181,9 @@ img.wp-smiley {
 	}
 }
 
+.badges-granted .badge-info {
+	background-color: color(from var(--secondary) xyz x y z / var(--bgblend-content-alpha));
+	border: 1px solid var(--content-border-color);
+	border-radius: var(--d-border-radius);
+	padding: 1em;
+}

@@ -7,4 +7,6 @@ wallpaper_alpha_user_field:
 wallpaper_content_alpha_user_field:
   default: -1
   type: integer
-
+mobile_wallpaper_user_field:
+  default: -1
+  type: integer

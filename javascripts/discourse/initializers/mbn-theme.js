@@ -13,15 +13,18 @@ class MbnThemeWallpaper {
 		setOwner(this, owner);
 		this.api = api;
 		this.styleRoot = document.body.parentElement.style;
+		this.mobileView = api.container.lookup("site:main").mobileView;
 		this.loadLocalStorage();
 
 		let user = api.getCurrentUser();
 		if (user) {
 			this.loadUserSettings(user);
+		} else if (this.mobileView) {
+			return;
 		} else {
 			// Set default
 			localStorage.removeItem(WALLPAPER_KEY);
-			this.setWallpaper(null, null, null);
+			this.setWallpaper(null, null, null, false);
 		}
 
 		api.onPageChange((url, title) => {
@@ -62,7 +65,7 @@ class MbnThemeWallpaper {
 		}
 		try {
 			let wp = JSON.parse(data);
-			this.setWallpaper(wp.wallpaper, wp.alpha, wp.contentAlpha);
+			this.setWallpaper(wp.wallpaper, wp.alpha, wp.contentAlpha, wp.mobile);
 		} catch(e) {
 			localStorage.removeItem(WALLPAPER_KEY);
 		}
@@ -76,10 +79,11 @@ class MbnThemeWallpaper {
 			let wp = {
 				wallpaper: user.user_fields[settings.wallpaper_user_field] || '',
 				alpha: this.toPct(user.user_fields[settings.wallpaper_alpha_user_field]),
-				contentAlpha: this.toPct(user.user_fields[settings.wallpaper_content_alpha_user_field])
+				contentAlpha: this.toPct(user.user_fields[settings.wallpaper_content_alpha_user_field]),
+				onMobile: user.user_fields[settings.mobile_wallpaper_user_field] || false
 			};
 			localStorage.setItem(WALLPAPER_KEY, JSON.stringify(wp));
-			this.setWallpaper(wp.wallpaper, wp.alpha, wp.contentAlpha);
+			this.setWallpaper(wp.wallpaper, wp.alpha, wp.contentAlpha, wp.onMobile);
 		});
 	}
 
@@ -93,7 +97,10 @@ class MbnThemeWallpaper {
 		return null;
 	}
 
-	setWallpaper(wallpaper, wallpaperAlpha, contentAlpha) {	
+	setWallpaper(wallpaper, wallpaperAlpha, contentAlpha, onMobile) {
+		if (this.mobileView && !onMobile) {
+			return;
+		}
 		console.log('wallpaper set to:', wallpaper, wallpaperAlpha, contentAlpha);
 		this.alterWallpaper(wallpaper);
 		this.alterWallpaperAlpha(wallpaperAlpha);
@@ -135,10 +142,7 @@ export default {
 	name: PLUGIN_ID,
 	initialize(owner) {
 		withPluginApi('1.34.0', (api) => {
-			if (!api.container.lookup("site:main").mobileView) { 
-				this.instance = new MbnThemeWallpaper(owner, api);
-			}
+			this.instance = new MbnThemeWallpaper(owner, api);
 		});
 	}
 }
-
