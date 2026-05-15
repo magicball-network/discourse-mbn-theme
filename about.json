@@ -4,13 +4,13 @@
   "license_url": "https://github.com/magicball-network/discourse-mbn-theme/blob/main/LICENSE",
   "about_url": "https://github.com/magicball-network/discourse-mbn-theme",
   "authors": "elmuerte",
-  "theme_version": "1.1.0",
+  "theme_version": "1.2.0",
   "minimum_discourse_version": "3.3.0",
   "maximum_discourse_version": null,
   "assets": {
 	"img-website": "assets/icon-website.png",
 	"img-quotes": "assets/icon-quotes.png",
-  	"img-plasma": "assets/plasma.webp",
+  "img-plasma": "assets/plasma.webp",
 	"img-profile-bg": "assets/profile-background.jpg",
 	"img-bg-waves": "assets/bg-waves.webp",
 	"img-bg-citadel-island": "assets/bg-citadel-island.webp",
@@ -41,5 +41,9 @@
     }
   },
   "modifiers": {
-  }
+  },
+  "screenshots": [
+    "screenshots/light.jpg",
+    "screenshots/dark.jpg"
+  ]
 }
